@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #440e3d;
+    --purple-light: #531253;
+    --gray-light: #eaeaea;
+    --white: white;
+
+}
+
+
+.menu {
+    background-color: var(--purple-medium);
+    width: 100%;
+    position: sticky;
+    top:  0;
+
+    padding: 5PX;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: initial;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px ;
+    background-color: var(--purple-medium);
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: var(--gray-light);
+    text-decoration: none;
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: rgb(119, 94, 110);
+}
+
+main{
+    border: black solid 3px;
+    font-family: initial;
+    font-style: italic;
+    /* margin-bottom: 60px ; */
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.img-fluid{
+    height: 400px;
+    width: 400px;
+}
+.contenedor {
+    display: flex;
+flex-direction: row;
+
+
+
+margin: 40px;
+justify-content: space-around;
+}
+
+.descripcion {
+    background-color: var(--gray-light);
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.descripcion-2{
+        display: flex;
+        padding: 20px;
+
+    flex-direction: column;
+    justify-content: space-around;
+        
+    }
+
+.parrafo {
+    font-size: 20px;
+    font-family: initial;
+    font-style: italic;
+}
+
+.h2 {
+    font-size: 18px;
+    
+}
+
+.botones {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.redes-sociales {
+    padding: 10px;
+    background-color: var(--purple-light);
+    
+}
+
+.color-redes {
+    color: white;
+    padding: 5px;
+    transition: .3 ease all ;
+}
+
+.color-redes:hover {
+    transform: scale(3.2);
+    color: black;
+}

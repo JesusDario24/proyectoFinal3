@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #440e3d;
+    --purple-light: #531253;
+    --gray-light: #eaeaea;
+    --white: white;
+
+}
+
+body {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-size: 22px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}   
+    .fondo {
+        width: 50%;
+        height: 100%;
+        background-image: url(../images/efecto.png);
+    }
+
+        .texto{
+            width: calc(100vw - 20px);
+            height: 100vh;
+           font-size: 90px;
+           font-family: initial;
+           font-style: italic;
+           display: flex;
+           align-items: flex-end;
+           justify-content: center;
+           color: rgb(61, 9, 50);
+           mix-blend-mode: multiply;
+
+    }
+
+
+    .menu {
+        background-color: var(--purple-medium);
+        width: 100%;
+        position: sticky;
+        top:  0;
+
+        padding: 5PX;
+        z-index: 999;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-family: initial;
+        font-style: italic;
+        margin-bottom: 60px;
+    }
+
+    .menu a{
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 26px ;
+        background-color: var(--purple-medium);
+        margin: 0 10px;
+        transition: .5s ease all;
+        color: var(--gray-light);
+        text-decoration: none;
+    }
+
+    .menu a:hover{
+        transform: translateY(18px);
+        background-color: rgb(119, 94, 110);
+    }
+
+.nosotros {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+.subtitulo {
+    font-size: 20px;
+    color: var(--purple-dark);
+    font-family: initial;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+
+}
+
+.subtitulo span {
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+
+.subtitulo::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--purple-dark);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+
+.nosotros .titulo {
+    width:  70%;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: initial;
+        font-style: italic;
+}
+
+.parrafo {
+    font-family: initial;
+        font-style: italic;
+
+}
+
+.productos {
+    background-color: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.productos .titulo {
+    width:  70%;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: initial;
+        font-style: italic;
+}
+
+.img-fluid{
+    height: 300px;
+    width: 300px;
+}
+
+.productos .producto {
+    position: relative;
+    width: 100%;
+
+}
+
+.productos .overlay {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--purple-light);
+    overflow: hidden;
+    transition: .5s ease ;
+}
+
+.productos .producto:hover .overlay {
+    width: 100%;
+    opacity: .8;
+}
+
+.productos .producto .overlay-texto {
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: var(--white);
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+
+}
+
+.productos  .btn-productos {
+    background-color:  var(--purple-medium);
+    color: var(--white);
+    padding:  7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border:  2px solid transparent;
+    transition: .3s ease
+}
+
+.productos .btn-productos:hover{
+    background-color: transparent;
+    border: 2px solid var(--purple-light) ;
+    color:  var(--purple-light);
+}
+
+.contacto {
+    margin-bottom: 60px;
+}
+
+.redes-sociales {
+    padding: 10px;
+    background-color: var(--purple-light);
+    
+}
+
+.color-redes {
+    color: white;
+    padding: 5px;
+    transition: .3 ease all ;
+}
+
+.color-redes:hover {
+    transform: scale(3.2);
+    color: black;
+}
+
+@media screen and (max-width: 990px){
+    p {
+        font-size: 18px;
+    }
+    .contenido-header .texto {
+        font-size: 60px;
+    }
+    .menu a {
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 620px){
+    p {
+        font-size: 18px;
+    }
+    .contenido-header .texto {
+        font-size: 40px;
+    }
+    .menu a {
+        font-size: 20px;
+    }
+    
+}
